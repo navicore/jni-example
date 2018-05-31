@@ -1,14 +1,5 @@
 name := "JniExample"
 
-fork := true
-javaOptions in test ++= Seq(
-  "-Xms128M", "-Xmx256M",
-  "-XX:MaxPermSize=256M",
-  "-XX:+CMSClassUnloadingEnabled"
-)
-
-parallelExecution in test := false
-
 version := "1.0"
 
 scalaVersion := "2.12.6"
@@ -34,13 +25,13 @@ lazy val native = (project in file("native")).
   settings(sourceDirectory in nativeCompile := sourceDirectory.value).
   enablePlugins(JniNative)
 
-mainClass in assembly := Some("onextent.jniexample.Main")
-assemblyJarName in assembly := "JniExample.jar"
-
-assemblyMergeStrategy in assembly := {
-  case PathList("reference.conf") => MergeStrategy.concat
-  case x if x.endsWith("io.netty.versions.properties") => MergeStrategy.first
-  case PathList("META-INF", _ @ _*) => MergeStrategy.discard
-  case _ => MergeStrategy.first
-}
-
+/* mainClass in assembly := Some("onextent.jniexample.Main") */
+/* assemblyJarName in assembly := "JniExample.jar" */
+/*  */
+/* assemblyMergeStrategy in assembly := { */
+/*   case PathList("reference.conf") => MergeStrategy.concat */
+/*   case x if x.endsWith("io.netty.versions.properties") => MergeStrategy.first */
+/*   case PathList("META-INF", _ @ _*) => MergeStrategy.discard */
+/*   case _ => MergeStrategy.first */
+/* } */
+/*  */

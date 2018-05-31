@@ -1,4 +1,6 @@
-#include "Sample1.h"
+//#include "Sample1.h"
+#include <jni.h>
+#include "onextent_jniexample_Sample1.h"
 #include <ctype.h>
 #include <string.h>
 
