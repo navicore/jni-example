@@ -12,18 +12,18 @@ void uppercase(char* str) {
     }
 }
 
-JNIEXPORT jint JNICALL Java_Sample1_intMethod
+JNIEXPORT jint JNICALL Java_onextent_jniexample_Sample1_intMethod
 (JNIEnv* env, jobject obj, jint num) {
     return num * num;
 }
 
 
-JNIEXPORT jboolean JNICALL Java_Sample1_booleanMethod
+JNIEXPORT jboolean JNICALL Java_onextent_jniexample_Sample1_booleanMethod
 (JNIEnv* env, jobject obj, jboolean boolean) {
     return !boolean;
 }
 
-JNIEXPORT jstring JNICALL Java_Sample1_stringMethod
+JNIEXPORT jstring JNICALL Java_onextent_jniexample_Sample1_stringMethod
 (JNIEnv* env, jobject obj, jstring string) {
     const char* str = env->GetStringUTFChars(string, 0);
     char cap[128];
@@ -33,7 +33,7 @@ JNIEXPORT jstring JNICALL Java_Sample1_stringMethod
     return env->NewStringUTF(cap);
 }
 
-JNIEXPORT jint JNICALL Java_Sample1_intArrayMethod
+JNIEXPORT jint JNICALL Java_onextent_jniexample_Sample1_intArrayMethod
 (JNIEnv* env, jobject obj, jintArray array) {
     int sum = 0;
     jsize len = env->GetArrayLength(array);

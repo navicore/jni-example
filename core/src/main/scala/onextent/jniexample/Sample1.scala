@@ -1,5 +1,8 @@
 package onextent.jniexample
 
+import ch.jodersky.jni.nativeLoader
+
+@nativeLoader("sample10")
 class Sample1 {
   // --- Native methods
   @native def intMethod(n: Int): Int
@@ -12,7 +15,7 @@ object Sample1 {
 
   // --- Main method to test our native library
   def main(args: Array[String]): Unit = {
-    System.loadLibrary("Sample1")
+    //System.loadLibrary("sample10")
     val sample = new Sample1
     val square = sample.intMethod(5)
     val bool = sample.booleanMethod(true)
