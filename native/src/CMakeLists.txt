@@ -23,7 +23,7 @@ endif()
 
 # Include directories
 include_directories(.)
-include_directories(../../core/target/native/include)
+include_directories(../../target/native/include)
 include_directories(${JNI_INCLUDE_DIRS})
 
 # Sources
