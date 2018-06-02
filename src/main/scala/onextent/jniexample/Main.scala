@@ -1,21 +1,9 @@
 package onextent.jniexample
 
-import ch.jodersky.jni.nativeLoader
-
-@nativeLoader("sample10")
-class Sample1 {
-  // --- Native methods
-  @native def intMethod(n: Int): Int
-  @native def booleanMethod(b: Boolean): Boolean
-  @native def stringMethod(s: String): String
-  @native def intArrayMethod(a: Array[Int]): Int
-}
-
-object Sample1 {
+object Main {
 
   // --- Main method to test our native library
   def main(args: Array[String]): Unit = {
-    //System.loadLibrary("sample10")
     val sample = new Sample1
     val square = sample.intMethod(5)
     val bool = sample.booleanMethod(true)
