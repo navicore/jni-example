@@ -10,7 +10,7 @@ cmake_minimum_required(VERSION 2.8.0)
 # Define project and related variables
 # (required by sbt-jni) please use semantic versioning
 #
-project (sample1lib)
+project (sample1)
 set(PROJECT_VERSION_MAJOR 0)
 set(PROJECT_VERSION_MINOR 0)
 set(PROJECT_VERSION_PATCH 0)
@@ -23,7 +23,6 @@ endif()
 
 # Include directories
 include_directories(.)
-include_directories(include)
 include_directories(../../core/target/native/include)
 include_directories(${JNI_INCLUDE_DIRS})
 
