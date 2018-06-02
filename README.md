@@ -20,7 +20,10 @@ To bootstrap a new project, clone this repo or follow the instructions at
 [sbt-jni](https://github.com/jodersky/sbt-jni).
 
 ----
-Todo: cross compiling (macos, linux intel, linux arm (raspberry pi), ...
-Todo: giter8
+
+###Todo: 
+
+* cross compiling (macos, linux intel, linux arm (raspberry pi), ...
+* giter8
 
 
