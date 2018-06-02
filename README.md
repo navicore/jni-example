@@ -21,7 +21,7 @@ To bootstrap a new project, clone this repo or follow the instructions at
 
 ----
 
-###Todo: 
+### Todo: 
 
 * cross compiling (macos, linux intel, linux arm (raspberry pi), ...
 * giter8
