@@ -2,7 +2,7 @@ name := "JniExample"
 
 version := "1.0"
 
-scalaVersion := "2.12.6"
+scalaVersion := "2.12.17"
 
 libraryDependencies ++=
   Seq(
