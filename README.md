@@ -1,3 +1,8 @@
+<!-- ghmig:moved -->
+> **This repository has moved to [https://git.navicore.tech/navicore/jni-example](https://git.navicore.tech/navicore/jni-example).**
+>
+> The GitHub copy is archived and no longer maintained.
+
 JNI Example
 -----
 
@@ -25,5 +30,3 @@ To bootstrap a new project, clone this repo or follow the instructions at
 
 * cross compiling (macos, linux intel, linux arm (raspberry pi), ...
 * giter8
-
-
